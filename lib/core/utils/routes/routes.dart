@@ -1,22 +1,77 @@
+import 'package:ecommerce_supbase/core/middleware/middleware.dart';
+import 'package:ecommerce_supbase/core/utils/constants/app_constant.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/loign_view.dart';
-import 'package:go_router/go_router.dart';
+import 'package:ecommerce_supbase/features/auth/presentition/views/register_view.dart';
+import 'package:ecommerce_supbase/features/forget_password/presentation/views/forgot_password_code.dart';
+import 'package:ecommerce_supbase/features/forget_password/presentation/views/forgot_password_view.dart';
+import 'package:ecommerce_supbase/features/forget_password/presentation/views/set_new_password.dart';
+import 'package:ecommerce_supbase/features/forget_password/presentation/views/success.dart';
+import 'package:ecommerce_supbase/features/onboarding/presentation/view/onboarding_view.dart';
+import 'package:ecommerce_supbase/features/splash/presentation/view/splash_view.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+
 
 abstract class AppRoutes {
-  static final routes = GoRouter(
-    routes: [
-      GoRoute(path: login, builder: (context, state) => const LoginView()),
-    ],
-  );
-  static const String login = '/';
+  static List<GetPage> routes = [
+    GetPage(
+      name: splash,
+      page: () => const SplashView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+      middlewares: [
+        AuthMiddleWare(),
+      ]
+    ),
+    GetPage(
+      name: onboarding,
+      page: () =>  const OnBoardingView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: login,
+      page: () => const LoginView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: register,
+      page: () =>  RegisterView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+        GetPage(
+      name: forgetpassword,
+      page: () =>  ForgotPasswordView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+     GetPage(
+      name: forgetpasswordcode,
+      page: () => const ForgotPasswordCode(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: setnewPassword,
+      page: () =>  const SetNewPassword(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: success,
+      page: () => const SuccessView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+  ];
+
+  static const String login = '/login';
   static const String register = '/register';
-  static const String home = '/home';
-  static const String productDetails = '/productDetails';
-  static const String cart = '/cart';
-  static const String profile = '/profile';
-  static const String settings = '/settings';
-  static const String orders = '/orders';
-  static const String checkout = '/checkout';
-  static const String search = '/search';
-  static const String favorites = '/favorites';
+  static const String onboarding = '/onboarding';
   static const String splash = '/splash';
+  static const String forgetpassword = '/forgotpassword';
+  static const String forgetpasswordcode = '/forgotpasswordcode';
+  static const String setnewPassword = '/setnewPassword';
+  static const String success = '/success';
 }

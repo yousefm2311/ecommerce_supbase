@@ -1,6 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:ecommerce_supbase/core/utils/text_style.dart';
+import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -42,12 +42,12 @@ class AppTheme {
     // ✏️ الحقول
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
-      fillColor: Colors.grey.shade100,
+      fillColor: Colors.grey,
       hintStyle: AppTextStyles.small,
       labelStyle: const TextStyle(color: Colors.black87),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide.none,
+
       ),
     ),
 
@@ -122,7 +122,7 @@ class AppTheme {
       labelStyle: const TextStyle(color: Colors.white70),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide.none,
+
       ),
     ),
 

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
-import 'package:ecommerce_supbase/core/utils/app_colors.dart';
+
+import 'package:ecommerce_supbase/core/utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
