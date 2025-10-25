@@ -1,4 +1,4 @@
-import 'package:ecommerce_supbase/core/utils/app_colors.dart';
+import 'package:ecommerce_supbase/core/utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomMaterialButton extends StatelessWidget {
@@ -18,6 +18,8 @@ class CustomMaterialButton extends StatelessWidget {
   final double fontSize;
   final EdgeInsetsGeometry padding;
 
+  final AnimatedSwitcher? textWidget;
+
   const CustomMaterialButton({
     super.key,
     required this.text,
@@ -34,7 +36,7 @@ class CustomMaterialButton extends StatelessWidget {
     this.borderColor,
     this.fontWeight = FontWeight.bold,
     this.fontSize = 16,
-    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 14), this.textWidget,
   });
 
   @override

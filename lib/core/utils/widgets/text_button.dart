@@ -1,4 +1,4 @@
-import 'package:ecommerce_supbase/core/utils/text_style.dart';
+import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextButton extends StatelessWidget {
