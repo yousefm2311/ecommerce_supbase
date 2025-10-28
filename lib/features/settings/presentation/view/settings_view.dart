@@ -1,5 +1,6 @@
 import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
+import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/features/settings/presentation/view/widgets/log_out.dart';
 import 'package:ecommerce_supbase/features/settings/presentation/view/widgets/privacy_widget.dart';
 import 'package:ecommerce_supbase/features/settings/presentation/view/widgets/switch_lang.dart';
@@ -12,7 +13,7 @@ class SettingsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = AppMediaQuery.of(context).size;
 
     return Scaffold(
       appBar: AppBar(

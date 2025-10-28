@@ -36,7 +36,8 @@ class CustomMaterialButton extends StatelessWidget {
     this.borderColor,
     this.fontWeight = FontWeight.bold,
     this.fontSize = 16,
-    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 14), this.textWidget,
+    this.padding = const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+    this.textWidget,
   });
 
   @override

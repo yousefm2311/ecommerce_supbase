@@ -80,4 +80,16 @@ class AppStrings {
   static const String enable = 'مفعل';
   static const String theme = 'الثيم';
   static const String ligth = 'فاتح';
+  static const String pathfrom = 'المسار من ';
+  static const String pathin = 'المسار الي ';
+  static const String capacityvehicle = 'سعة المركبة';
+  static const String edit = 'تعديل';
+  static const String save = 'حفظ';
+  static const String vehicel = 'المركبة';
+  static const String vehicelname = 'ميكروباص.  مقعدا';
+  static const String favoritepath = 'المسار المفضل';
+  static const String tripsummary = 'ملخص الرحلة';
+  static const String triprequest = 'طلبات المنطقة';
+  static const String accept = 'قبول';
+  
 }

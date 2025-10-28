@@ -1,6 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_colors.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
+import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/custom_material_button.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/register_text_form_field.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/terms_conditions.dart';
@@ -14,7 +15,7 @@ class RegisterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = AppMediaQuery.of(context).size;
 
     return Scaffold(
       appBar: AppBar(),

@@ -3,6 +3,7 @@ import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
 import 'package:ecommerce_supbase/core/utils/functions/navigator.dart';
 import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
+import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/custom_material_button.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class SuccessView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = AppMediaQuery.of(context).size;
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: size.width * 0.05),

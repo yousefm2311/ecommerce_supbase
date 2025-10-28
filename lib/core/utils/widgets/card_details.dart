@@ -1,6 +1,4 @@
-
 import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
-
 import 'package:flutter/material.dart';
 
 class CardDetails extends StatelessWidget {

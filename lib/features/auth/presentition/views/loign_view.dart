@@ -3,6 +3,7 @@ import 'package:ecommerce_supbase/core/utils/constants/app_colors.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
 import 'package:ecommerce_supbase/core/utils/functions/navigator.dart';
 import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
+import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/custom_material_button.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/text_button.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/signin_text_form_field.dart';
@@ -22,7 +23,7 @@ class _LoginViewState extends State<LoginView> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    final size = AppMediaQuery.of(context).size;
 
     return Scaffold(
       body: SafeArea(
