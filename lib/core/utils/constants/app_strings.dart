@@ -19,30 +19,65 @@ class AppStrings {
   static const String forgotPaswwordText = "نسيت كلمة المرور";
   static const String checkemail = "تحقق من بريدك الإلكتروني";
   static const String setnewPassword = "قم بتعيين كلمة مرور جديدة";
-  static const String setnewPasswordbody = "أنشئ كلمة مرور جديدة. تأكد من أنها مختلفة عن كلمات المرور السابقة لأغراض الأمان.";
-  static const String checkemailbody = "لقد أرسلنا رابط إعادة التعيين إلى ........@gmail.com أدخل الرمز المكون من 6 أرقام المذكور في البريد الإلكتروني";
+  static const String setnewPasswordbody =
+      "أنشئ كلمة مرور جديدة. تأكد من أنها مختلفة عن كلمات المرور السابقة لأغراض الأمان.";
+  static const String checkemailbody =
+      "لقد أرسلنا رابط إعادة التعيين إلى ........@gmail.com أدخل الرمز المكون من 6 أرقام المذكور في البريد الإلكتروني";
   static const String resendCode = "لم يصلك البريد الإلكتروني بعد؟";
-  static const String forgotPaswwordbody ="الرجاء إدخال بريدك الإلكتروني لإعادة تعيين كلمة المرور";
+  static const String forgotPaswwordbody =
+      "الرجاء إدخال بريدك الإلكتروني لإعادة تعيين كلمة المرور";
   static const String bodyLogin = "!مرحبًا بك مرة أخرى، لقد افتقدناك";
   static const String register = "إنشاء حساب";
   static const String email = "البريد الإلكتروني";
   static const String success = "ناجح";
-  static const String successbody = "تهانينا! تم تغيير كلمة مرورك. انقر على متابعه لتسجيل الدخول.";
+  static const String successbody =
+      "تهانينا! تم تغيير كلمة مرورك. انقر على متابعه لتسجيل الدخول.";
 
   static const String password = "كلمة المرور";
-  static const String passwordConfirm ="تأكيد كلمة المرور";
-  static const String updatePassword ="تغيير كلمه المرور";
- 
+  static const String passwordConfirm = "تأكيد كلمة المرور";
+  static const String updatePassword = "تغيير كلمه المرور";
 
   static const String name = "الاسم الكامل";
 
-
   static const String phone = "رقم الهاتف";
-
-
 
   static const String trips = "الرحلات";
   static const String chat = "المحادثة";
   static const String notifications = "الإشعارات";
   static const String profile = "الملف الشخصي";
+  static const String settings = "الاعدادات";
+
+  static const String home = "الرئيسية";
+
+  static const String wallet = 'المحفظة';
+  static const String reminder = 'التذكيرات';
+  static const String oilAndMa = 'الوقود والصيانة';
+  static const String aboutApp = 'حول التطبيق';
+  static const String logout = 'تسجيل الخروج';
+  static const String termsandconditions =
+      "من خلال تسجيل الدخول فإنك توافق على شروط الاستخدام الخاصة بنا";
+  static const String terms = 'الشروط والأحكام ';
+  static const String conditions = 'سياسة الخصوصية';
+  static const String resend = 'أعد إرساله';
+  static const String goodmorning = 'صباح الخير, ';
+  static const String status = 'الحالة';
+  static const String stop = 'ايقاف';
+  static const String starttrip = 'ابدا رحلة جديدة';
+  static const String start = 'ابدا';
+  static const String show = 'عرض';
+  static const String open = 'فتح';
+  static const String online = 'نشط الان';
+  static const String summaryday = 'ملخص اليوم';
+  static const String nearbyrequest = 'طلبات قريبة';
+  static const String selectpath = 'اختيار المسار والسعة';
+  static const String locationLive5Seconds = 'الموقع يبث كل ٥ ثوان';
+  static const String privacy = 'الخصوصية';
+  static const String policiesanddata = 'السياسات والبيانات';
+  static const String language = 'اللغة';
+  static const String ar_lang = 'العربية';
+  static const String en_lang = 'الانجليزية';
+  static const String change = 'تغيير';
+  static const String enable = 'مفعل';
+  static const String theme = 'الثيم';
+  static const String ligth = 'فاتح';
 }
