@@ -46,7 +46,7 @@ class _ForgotPasswordCodeState extends State<ForgotPasswordCode> {
                Row(
                 children: [
                   const Text(AppStrings.resendCode,style:AppTextStyles.body),
-                  CustomTextButton(text: 'أعد إرساله', onPressed: (){
+                  CustomTextButton(text: AppStrings.resend, onPressed: (){
                     
                   },textColor: AppColors.primary,)
                 ],

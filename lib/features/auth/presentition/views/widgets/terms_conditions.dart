@@ -1,3 +1,4 @@
+import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/text_button.dart';
 import 'package:flutter/material.dart';
 
@@ -11,11 +12,11 @@ class TermsConditions extends StatelessWidget {
       crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         const Text(
-          "من خلال تسجيل الدخول فإنك توافق على شروط الاستخدام الخاصة بنا",
+          AppStrings.termsandconditions,
           style: TextStyle(fontSize: 12),
         ),
         CustomTextButton(
-          text: 'الشروط والأحكام ',
+          text: AppStrings.terms,
           onPressed: () {},
           fontSize: 12,
           textColor: Colors.lightBlue,
@@ -24,7 +25,7 @@ class TermsConditions extends StatelessWidget {
         const Text(" و ", style: TextStyle(fontSize: 12)),
         CustomTextButton(
           padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-          text: 'سياسة الخصوصية',
+          text: AppStrings.conditions,
           onPressed: () {},
           fontSize: 12,
           textColor: Colors.lightBlue,

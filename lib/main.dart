@@ -1,21 +1,23 @@
 import 'package:ecommerce_supbase/core/utils/binding.dart';
 import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
 import 'package:ecommerce_supbase/core/utils/services/settings/settings_services.dart';
-import 'package:ecommerce_supbase/core/utils/services/themes/dark_theme.dart';
+import 'package:ecommerce_supbase/core/utils/services/themes/themes.dart';
+import 'package:ecommerce_supbase/features/settings/presentation/view_model/theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   initService();
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 Future initService() async {
   await Get.putAsync(() => SettingsServices().init());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  final themeController = Get.put(ThemeController());
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
+      themeMode: themeController.isDark ? ThemeMode.dark : ThemeMode.light,
       locale: const Locale('ar', 'EG'),
       supportedLocales: const [Locale('ar', 'EG'), Locale('en', 'US')],
       localizationsDelegates: const [

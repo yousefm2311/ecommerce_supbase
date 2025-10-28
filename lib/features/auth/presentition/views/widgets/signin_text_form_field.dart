@@ -28,7 +28,7 @@ class _SignInTextFormFieldState extends State<SignInTextFormField> {
             hint: AppStrings.email,
             prefixIcon: IconBroken.Profile,
             keyboardType: TextInputType.emailAddress,
-            fillColor: const Color(0xFFF7F7F7),
+            fillColor: const Color(0x0ff7f7f7),
           ),
         ),
 
@@ -38,10 +38,10 @@ class _SignInTextFormFieldState extends State<SignInTextFormField> {
           child: CustomTextField(
             label: '',
             validator: (value) => Validators.password(value),
+            fillColor: const Color(0x0ff7f7f7),
             hint: AppStrings.password,
             prefixIcon: IconBroken.Lock,
             keyboardType: TextInputType.visiblePassword,
-            fillColor: const Color(0xFFF7F7F7),
             suffixIcon: _isVisible ? Icons.visibility : Icons.visibility_off,
             obscureText: _isVisible,
             onSuffixTap: () {

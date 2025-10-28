@@ -5,8 +5,8 @@ import 'package:ecommerce_supbase/core/utils/functions/navigator.dart';
 import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/custom_material_button.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/text_button.dart';
-import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/terms_conditions.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/signin_text_form_field.dart';
+import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/terms_conditions.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/text_partition.dart';
 import 'package:flutter/material.dart';
 
@@ -76,6 +76,7 @@ class _LoginViewState extends State<LoginView> {
                             if (formKey.currentState!.validate()) {
                               FocusScope.of(context).unfocus();
                             }
+                            pushReplacementNamedRoute(AppRoutes.bottomNaviBar);
                           },
                           elevation: 0,
                           textColor: AppColors.white,

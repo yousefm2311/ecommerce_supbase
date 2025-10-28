@@ -2,10 +2,12 @@ import 'package:ecommerce_supbase/core/middleware/middleware.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_constant.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/loign_view.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/register_view.dart';
+import 'package:ecommerce_supbase/features/bottom_navi_bar/presentation/view/bottom_navi.dart';
 import 'package:ecommerce_supbase/features/forget_password/presentation/views/forgot_password_code.dart';
 import 'package:ecommerce_supbase/features/forget_password/presentation/views/forgot_password_view.dart';
 import 'package:ecommerce_supbase/features/forget_password/presentation/views/set_new_password.dart';
 import 'package:ecommerce_supbase/features/forget_password/presentation/views/success.dart';
+import 'package:ecommerce_supbase/features/home/presentation/view/home_view.dart';
 import 'package:ecommerce_supbase/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:ecommerce_supbase/features/splash/presentation/view/splash_view.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -64,6 +66,18 @@ abstract class AppRoutes {
       transition: Transition.cupertino,
       transitionDuration: kTransitionDuration,
     ),
+        GetPage(
+      name: home,
+      page: () => const HomeView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+            GetPage(
+      name: bottomNaviBar,
+      page: () =>  BottonNaviBar(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
   ];
 
   static const String login = '/login';
@@ -74,4 +88,6 @@ abstract class AppRoutes {
   static const String forgetpasswordcode = '/forgotpasswordcode';
   static const String setnewPassword = '/setnewPassword';
   static const String success = '/success';
+  static const String home = '/home';
+  static const String bottomNaviBar = '/bottomNaviBar';
 }
