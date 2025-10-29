@@ -77,7 +77,9 @@ class _LoginViewState extends State<LoginView> {
                             if (formKey.currentState!.validate()) {
                               FocusScope.of(context).unfocus();
                             }
-                            pushReplacementNamedRoute(AppRoutes.bottomNaviBar);
+                            pushReplacementAllNamedRoute(
+                              AppRoutes.bottomNaviBar,
+                            );
                           },
                           elevation: 0,
                           textColor: AppColors.white,

@@ -58,7 +58,9 @@ class AppTheme {
     ),
 
     // 📜 BottomSheet
-    bottomSheetTheme: const BottomSheetThemeData(backgroundColor: Colors.white),
+    bottomSheetTheme: BottomSheetThemeData(
+      backgroundColor: Colors.grey.shade100,
+    ),
 
     // 🧱 Divider
     dividerTheme: const DividerThemeData(color: Colors.grey, thickness: 0.8),

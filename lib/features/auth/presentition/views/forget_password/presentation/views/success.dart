@@ -25,17 +25,14 @@ class SuccessView extends StatelessWidget {
             const SizedBox(height: 20.0),
             const SizedBox(
               width: 200.0,
-              child: Text(
-                AppStrings.successbody,
-                style: AppTextStyles.body,
-              ),
+              child: Text(AppStrings.successbody, style: AppTextStyles.body),
             ),
             const SizedBox(height: 20.0),
             CustomMaterialButton(
               width: double.infinity,
               text: AppStrings.continue_,
               onPressed: () {
-                pushReplacementNamedRoute(AppRoutes.login);
+                pushReplacementAllNamedRoute(AppRoutes.login);
               },
             ),
           ],

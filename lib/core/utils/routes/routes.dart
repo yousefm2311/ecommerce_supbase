@@ -8,6 +8,7 @@ import 'package:ecommerce_supbase/features/auth/presentition/views/loign_view.da
 import 'package:ecommerce_supbase/features/auth/presentition/views/register_view.dart';
 import 'package:ecommerce_supbase/features/bottom_navi_bar/presentation/view/bottom_navi.dart';
 import 'package:ecommerce_supbase/features/home/presentation/view/home_view.dart';
+import 'package:ecommerce_supbase/features/live_trip/presentation/view/live_trip_view.dart';
 import 'package:ecommerce_supbase/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:ecommerce_supbase/features/profile/presentation/view/profile_view.dart';
 import 'package:ecommerce_supbase/features/splash/presentation/view/splash_view.dart';
@@ -103,6 +104,12 @@ abstract class AppRoutes {
       transition: Transition.cupertino,
       transitionDuration: kTransitionDuration,
     ),
+    GetPage(
+      name: livetrip,
+      page: () => const LiveTripView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
   ];
 
   static const String login = '/login';
@@ -119,4 +126,5 @@ abstract class AppRoutes {
   static const String profile = '/profile';
   static const String tripsummary = '/tripsummary';
   static const String triprequest = '/triprequest';
+  static const String livetrip = '/livetrip';
 }

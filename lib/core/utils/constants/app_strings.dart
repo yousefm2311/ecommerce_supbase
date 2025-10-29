@@ -91,5 +91,6 @@ class AppStrings {
   static const String tripsummary = 'ملخص الرحلة';
   static const String triprequest = 'طلبات المنطقة';
   static const String accept = 'قبول';
+  static const String livetrip = 'الرحلة الحية';
   
 }
