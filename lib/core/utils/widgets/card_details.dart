@@ -9,6 +9,7 @@ class CardDetails extends StatelessWidget {
     required this.trailing,
     this.color,
     this.textStyle,
+    this.contentPadding, this.height,
   });
 
   final String title;
@@ -16,12 +17,14 @@ class CardDetails extends StatelessWidget {
   final Widget? trailing;
   final Color? color;
   final TextStyle? textStyle;
+  final double? contentPadding;
+  final double? height;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 80,
+      height:height?? 80,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
         color: color ?? Theme.of(context).colorScheme.surface,
@@ -29,7 +32,10 @@ class CardDetails extends StatelessWidget {
       child: ListTile(
         trailing: trailing,
         title: Text(title, style: textStyle ?? AppTextStyles.title),
-        subtitle: Text(subTitle, style: AppTextStyles.small),
+        subtitle: Padding(
+          padding: EdgeInsets.only(top: contentPadding ?? 0),
+          child: Text(subTitle, style: AppTextStyles.small),
+        ),
       ),
     );
   }

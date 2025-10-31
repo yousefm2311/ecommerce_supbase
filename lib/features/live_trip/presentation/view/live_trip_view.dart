@@ -18,6 +18,12 @@ class LiveTripView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(AppStrings.livetrip, style: AppTextStyles.title),
+        leading: IconButton(
+          onPressed: () {
+            pushNamedRoute(AppRoutes.inriderpassenger);
+          },
+          icon: const Icon(Icons.reduce_capacity),
+        ),
       ),
 
       body: Padding(

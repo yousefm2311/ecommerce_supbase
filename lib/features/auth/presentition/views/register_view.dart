@@ -1,6 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_colors.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
+import 'package:ecommerce_supbase/core/utils/functions/navigator.dart';
+import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
 import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/custom_material_button.dart';
 import 'package:ecommerce_supbase/features/auth/presentition/views/widgets/register_text_form_field.dart';
@@ -55,6 +57,7 @@ class RegisterView extends StatelessWidget {
                             if (formKey.currentState!.validate()) {
                               FocusScope.of(context).unfocus();
                             }
+                            pushNamedRoute(AppRoutes.uploaddocuments);
                           },
                           elevation: 0,
                           textColor: AppColors.white,

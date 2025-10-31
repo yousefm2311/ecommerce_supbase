@@ -100,6 +100,17 @@ class DrawerWidget extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: const Icon(Icons.support_agent),
+              title: const Text(
+                AppStrings.support,
+                style: TextStyle(fontFamily: 'Cairo'),
+              ),
+              onTap: () {
+                controller.selectedIndex.value = 3;
+                Get.back();
+              },
+            ),
+            ListTile(
               leading: const Icon(IconBroken.Logout),
               title: const Text(
                 AppStrings.logout,

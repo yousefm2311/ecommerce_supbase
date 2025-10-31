@@ -8,13 +8,17 @@ import 'package:ecommerce_supbase/features/auth/presentition/views/loign_view.da
 import 'package:ecommerce_supbase/features/auth/presentition/views/register_view.dart';
 import 'package:ecommerce_supbase/features/bottom_navi_bar/presentation/view/bottom_navi.dart';
 import 'package:ecommerce_supbase/features/home/presentation/view/home_view.dart';
+import 'package:ecommerce_supbase/features/inrider_passengers/presentation/view/inrider_passenger_view.dart';
 import 'package:ecommerce_supbase/features/live_trip/presentation/view/live_trip_view.dart';
+import 'package:ecommerce_supbase/features/notifications/presentation/view/notification_view.dart';
 import 'package:ecommerce_supbase/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:ecommerce_supbase/features/profile/presentation/view/profile_view.dart';
 import 'package:ecommerce_supbase/features/splash/presentation/view/splash_view.dart';
 import 'package:ecommerce_supbase/features/start_trip/presentation/view/start_trip_view.dart';
 import 'package:ecommerce_supbase/features/trip_request/presentation/view/trip_request_view.dart';
 import 'package:ecommerce_supbase/features/trip_summary/presentation/view/trip_summary_view.dart';
+import 'package:ecommerce_supbase/features/update_app/presentation/view/update_app_view.dart';
+import 'package:ecommerce_supbase/features/upload_documents/presentation/view/upload_documents_view.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
 abstract class AppRoutes {
@@ -110,6 +114,30 @@ abstract class AppRoutes {
       transition: Transition.cupertino,
       transitionDuration: kTransitionDuration,
     ),
+    GetPage(
+      name: inriderpassenger,
+      page: () => const InriderPassengerView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: notifications,
+      page: () => const NotificationView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: updateapp,
+      page: () => const UpdateAppView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
+    GetPage(
+      name: uploaddocuments,
+      page: () => const UploadDocumentsView(),
+      transition: Transition.cupertino,
+      transitionDuration: kTransitionDuration,
+    ),
   ];
 
   static const String login = '/login';
@@ -127,4 +155,8 @@ abstract class AppRoutes {
   static const String tripsummary = '/tripsummary';
   static const String triprequest = '/triprequest';
   static const String livetrip = '/livetrip';
+  static const String inriderpassenger = '/inriderpassenger';
+  static const String notifications = '/notifications';
+  static const String updateapp = '/updateapp';
+  static const String uploaddocuments = '/uploaddocuments';
 }

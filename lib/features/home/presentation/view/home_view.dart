@@ -1,5 +1,7 @@
 import 'package:ecommerce_supbase/core/utils/constants/app_strings.dart';
 import 'package:ecommerce_supbase/core/utils/constants/app_text_style.dart';
+import 'package:ecommerce_supbase/core/utils/functions/navigator.dart';
+import 'package:ecommerce_supbase/core/utils/routes/routes.dart';
 import 'package:ecommerce_supbase/core/utils/services/%C2%A0helpers/app_mediaquery.dart';
 import 'package:ecommerce_supbase/core/utils/widgets/icon_broken.dart';
 import 'package:ecommerce_supbase/features/home/presentation/view/widgets/nearby_rquest_partition.dart';
@@ -15,12 +17,14 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = AppMediaQuery.of(context).size;
-    
+
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
           icon: const Icon(IconBroken.Notification),
-          onPressed: () {},
+          onPressed: () {
+            pushNamedRoute(AppRoutes.notifications);
+          },
         ),
         title: const Text(AppStrings.home, style: AppTextStyles.title),
         centerTitle: true,

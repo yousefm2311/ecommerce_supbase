@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class AppStrings {
   static const String appName = "MikroLink";
   static const String appSplash = "اعثر على ميكروباصك بسهولة";
@@ -92,5 +94,19 @@ class AppStrings {
   static const String triprequest = 'طلبات المنطقة';
   static const String accept = 'قبول';
   static const String livetrip = 'الرحلة الحية';
-  
+  static const String inriderpassenger = 'ركاب الرحلة';
+  static const String support = 'الدعم الفني';
+  static const String update = 'تحديث';
+  static const String updatevailable = 'تحديث متاح';
+  static const String updateDetails =
+      'يوجد اصدار جديد يحسن الأداء ويصلح يعض المشاكل.';
+  static const String updatesize = 'الحجم:12MB .ينصح بالتحديث الأن. ';
+  static const String updatenow = 'تحديث الأن';
+
+  static const String uploaddocuments = 'رفع المستندات';
+  static const String idfront = 'رخصة القيادة (صورة أمامية)';
+  static const String idback = 'رخصة القيادة (صورة خلفية)';
+  static const String license = 'رخصة المركبة';
+  static const String carphoto = 'صورة المركبة';
+  static const String profilephoto = 'صورة الملف الشخصي';
 }
